@@ -1,0 +1,54 @@
+.card {
+  background: #F9F9FB;
+  transition: .3s ease-in-out;
+  & > .card-body {
+    padding-left: 4rem;
+    padding-top: 4rem;
+    padding-right: 3rem;
+  };
+  & .card-title {
+    max-width: 80%;
+  };
+  & h4 {
+    font-size: 3.2rem;
+  };
+}
+
+.show>.btn-secondary.dropdown-toggle, .btn-secondary:not(:disabled):not(.disabled) {
+  background-color: #fff!important;
+  border-color: #d3d3d3!important;
+  &:focus, &:active {
+    background-color: #fff!important;
+    border-color: #d3d3d3!important;
+    box-shadow: none!important;
+  }
+}
+
+.dropdown-toggle {
+  &::after {
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border: none!important;
+  }
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #{$main_color};
+  background-color: #{$main_color};
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  color: #fff;
+  background-color: rgba(35, 50, 71, .25);
+  border-color: rgba(35, 50, 71, .25);
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(35, 50, 71, .25);
+  box-shadow: 0 0 0 0.2rem rgba(35, 50, 71, .25);
+}

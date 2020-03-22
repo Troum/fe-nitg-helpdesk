@@ -1,0 +1,17 @@
+@import "../variables";
+
+#{$prefix}_close-filters-button {
+  color: #{$main_color};
+  background: transparent!important;
+  border: none!important;
+  font-size: 1rem;
+  &:hover, &:focus {
+    color: #{$main_color}!important;
+    box-shadow: none!important;
+    background: transparent!important;
+  }
+}
+
+.mx-datepicker {
+  width: 100%!important;
+}
