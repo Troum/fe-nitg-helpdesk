@@ -137,7 +137,7 @@ class TicketController extends Controller
      */
     private function fetch()
     {
-        $fetched = Ticket::all();
+        $fetched = Ticket::all()->sortByDesc('created_at');
         $tickets = [];
         foreach ($fetched as $item) {
             array_push($tickets, [
